@@ -1,3 +1,5 @@
+using Catalog;
+
 namespace Api
 {
     public class Program
@@ -8,9 +10,9 @@ namespace Api
 
             // Add services to the container
             builder.Services
-                .AddCatalogModule(builder.Configuration)
-                .AddBasketModule(builder.Configuration)
-                .AddOrderingModule(builder.Configuration);
+                .AddCatalogModule(builder.Configuration);
+            //.AddBasketModule(builder.Configuration)
+            //.AddOrderingModule(builder.Configuration);
 
             var app = builder.Build();
 
