@@ -1,7 +1,3 @@
-using Basket;
-using Catalog;
-using Ordering;
-
 namespace Api
 {
     public class Program
