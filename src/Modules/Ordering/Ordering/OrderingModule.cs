@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Ordering
@@ -14,6 +15,17 @@ namespace Ordering
             //  .AddApiServices(configuration)
 
             return services;
+        }
+
+        public static IApplicationBuilder UseOrderingModule(this IApplicationBuilder app)
+        {
+            //Configure the HTTP request pipeline
+            //app
+            //  .UseApplicationServices()
+            //  .UseInfrastructureServices()
+            //  .UseApiServices();
+
+            return app;
         }
     }
 }
