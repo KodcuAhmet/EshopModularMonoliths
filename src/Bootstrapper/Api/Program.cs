@@ -1,4 +1,6 @@
+using Basket;
 using Catalog;
+using Ordering;
 
 namespace Api
 {
@@ -10,13 +12,17 @@ namespace Api
 
             // Add services to the container
             builder.Services
-                .AddCatalogModule(builder.Configuration);
-            //.AddBasketModule(builder.Configuration)
-            //.AddOrderingModule(builder.Configuration);
+                .AddCatalogModule(builder.Configuration)
+                .AddBasketModule(builder.Configuration)
+                .AddOrderingModule(builder.Configuration);
 
             var app = builder.Build();
 
             // Configure the HTTP request pipleline
+            app
+                .UseCatalogModule()
+                .UseBasketModule()
+                .UseOrderingModule();
 
             app.Run();
         }
