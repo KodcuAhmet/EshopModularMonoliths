@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering", "Modules\Orderin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared\Shared.csproj", "{65059978-EF9E-43BA-851F-38EF1C9D91AE}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{5AC4ECE3-2469-4B87-8853-EE192005B8A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{65059978-EF9E-43BA-851F-38EF1C9D91AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65059978-EF9E-43BA-851F-38EF1C9D91AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65059978-EF9E-43BA-851F-38EF1C9D91AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AC4ECE3-2469-4B87-8853-EE192005B8A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AC4ECE3-2469-4B87-8853-EE192005B8A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AC4ECE3-2469-4B87-8853-EE192005B8A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AC4ECE3-2469-4B87-8853-EE192005B8A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,5 +70,8 @@ Global
 		{B65E12F6-732F-4055-8804-6C69C71C02D6} = {E0E4DEB3-5B1B-414D-B53E-5FA4FA578C5F}
 		{9C250AB2-762D-4464-91ED-6A1C78F550D5} = {00E26883-3E4E-40FD-BB1D-D63ED933C8C1}
 		{65059978-EF9E-43BA-851F-38EF1C9D91AE} = {7C8AF1EE-F7DC-4FE5-9F7C-CD1A7A95EC23}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81EC3241-D73D-40B7-847A-4F67D84E912E}
 	EndGlobalSection
 EndGlobal

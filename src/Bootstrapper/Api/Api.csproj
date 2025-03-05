@@ -1,15 +1,27 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<UserSecretsId>8a860d03-ac1b-46b0-9ccd-72483664a07e</UserSecretsId>
+		<DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+		<DockerfileContext>..\..</DockerfileContext>
+		<DockerComposeProjectPath>..\..\docker-compose.dcproj</DockerComposeProjectPath>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\Modules\Basket\Basket\Basket.csproj" />
-    <ProjectReference Include="..\..\Modules\Catalog\Cayalog\Catalog.csproj" />
-    <ProjectReference Include="..\..\Modules\Ordering\Ordering\Ordering.csproj" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\Modules\Basket\Basket\Basket.csproj" />
+		<ProjectReference Include="..\..\Modules\Catalog\Cayalog\Catalog.csproj" />
+		<ProjectReference Include="..\..\Modules\Ordering\Ordering\Ordering.csproj" />
+	</ItemGroup>
 
 </Project>
